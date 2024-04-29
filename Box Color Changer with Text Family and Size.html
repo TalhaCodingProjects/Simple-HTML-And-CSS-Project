@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Color Changer with Text Family and Size</title>
+    <style>
+        .box{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            width: 80%;
+            font-size: 2rem;
+            margin: auto;
+            height: 34vh;
+            background-color: blue;
+        }
+        .box h1{
+            position: relative;
+            top: 3.5rem;
+        }
+        .box:hover{
+            cursor: pointer;
+            animation: BoxChanger ease-in-out 40s alternate infinite ;
+        }
+        @keyframes BoxChanger {
+            0%{
+                width: 80%;
+                height: 34vh;
+                background: blue;
+                font-size: 1rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            2%{
+                width: 60%;
+                height: 24vh;
+                background: rgb(28, 209, 164);
+                font-size: 1.3rem;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            6%{
+                width: 73%;
+                height: 30vh;
+                background: rgb(230, 180, 89);
+                font-size: 1.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            8%{
+                width: 82%;
+                height: 32vh;
+                background: rgb(6, 22, 110);
+                font-size: 1.4rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            10%{
+                width: 80%;
+                height: 34vh;
+                background: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>This is the text</h1>
+    </div>
+</body>
+</html>
