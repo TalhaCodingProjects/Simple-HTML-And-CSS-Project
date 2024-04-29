@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            margin-top: 14%;
+            background-color: orange;
+            width: 100%;
+            height: 60vh;
+            text-align: center;
+        }
+        .text{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: blue;
+            height: 24vh;
+            width: 95%;
+            position: relative;
+            top: 5.5rem;
+            padding: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            border-radius: 44px;
+            animation: changeColorSize 6s ease-in-out alternate infinite;
+        }
+
+        @keyframes changeColorSize {
+            0%{
+                background-color: Orange;
+                width: 100%;
+                height: 24vh;
+            }
+            10%{
+                background-color: rgb(212, 144, 18);
+                width: 90%;
+                height: 24vh;
+                border-radius: 45px;
+            }
+            20%{
+                background-color: rgb(124, 85, 12);
+                width: 80%;
+                height: 24vh;
+                border-radius: 30px;
+            }
+            30%{
+                background-color: rgb(18, 180, 159);
+                width: 70%;
+                height: 24vh;
+                border-radius: 42px;
+            }
+            40%{
+                background-color: rgb(133, 38, 177);
+                width: 65%;
+                height: 24vh;
+                border-radius: 60px;
+            }
+            50%{
+                background-color: rgb(247, 194, 51);
+                width: 60%;
+                height: 24vh;
+                border-radius: 35px;
+            }
+            60%{
+                background-color: rgb(247, 123, 51);
+                width: 55%;
+                height: 24vh;
+                border-radius: 27px;
+            }
+            70%{
+                background-color: rgb(35, 212, 88);
+                width: 50%;
+                height: 24vh;
+                border-radius: 26px;
+            }
+            80%{
+                background-color: rgb(212, 156, 35);
+                width: 45%;
+                height: 24vh;
+                border-radius: 57px;
+            }
+            90%{
+                background-color: rgb(131, 230, 139);
+            }
+            100%{
+                background-color: rgb(29, 40, 194);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="text">
+            <h1>Learn And Suscribe the Channel</h1>
+            <button type="button" class="btn btn-info">Info</button>
+        </div>
+    </div>
+</body>
+</html>
